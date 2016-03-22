@@ -22,11 +22,24 @@
                Modalidade<span class="caret"></span>
              </a>
              <ul class="dropdown-menu">
-                <li role="presentation"><a href="telaCadastrarAluno.php">Cadastrar modalidade</a></li>
-                <li role="presentation"><a href="telaConsultaBeneficiario.php">Consultar modalidade</a></li>
-                <li role="presentation"><a href="telaSolicitarBolsaEstagio.php">Alterar modalidade</a></li>
-                <li role="presentation"><a href="telaConsultarSolicitacaoBolsaEstagio.php">Desativar modalidade</a></li>
-                <li role="presentation"><a href="telaConsultarSolicitacaoBolsaEstagio.php">Reativar modalidade</a></li>
+                 <li role="presentation"><a href="telaCadastrarModalidade.php">Cadastrar modalidade</a></li>
+                <li role="presentation"><a href="">Consultar modalidade</a></li>
+                <li role="presentation"><a href="">Alterar modalidade</a></li>
+                <li role="presentation"><a href="">Desativar modalidade</a></li>
+                <li role="presentation"><a href="">Reativar modalidade</a></li>
+            </ul>
+        </li>
+        
+        <li role="presentation" class="dropdown">
+             <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+               Matricula<span class="caret"></span>
+             </a>
+             <ul class="dropdown-menu">
+                 <li role="presentation"><a href="telaMatricularAluno.php">Matricular aluno</a></li>
+                <li role="presentation"><a href="">Consultar modalidade</a></li>
+                <li role="presentation"><a href="">Alterar modalidade</a></li>
+                <li role="presentation"><a href="">Desativar modalidade</a></li>
+                <li role="presentation"><a href="">Reativar modalidade</a></li>
             </ul>
         </li>
             <li role="presentation"><a href="logout.php">Sair</a></li>
