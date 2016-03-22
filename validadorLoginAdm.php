@@ -26,7 +26,7 @@
           $_SESSION['UsuarioLogin'] = $resultado['login'];
           // Redireciona o visitante
           echo $_SESSION['UsuarioID'];
-          header("Location: restrito.php"); exit;
+          header("Location: restritoAdm.php"); exit;
     
 
 
