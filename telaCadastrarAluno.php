@@ -2,9 +2,7 @@
     
     <?php include("head.php");  ?>
     <body>
-        <br>
-        <center> <img src="imagem/logoBelaForma.jpg" width="700" height="300"> </center>
-        <br>
+        <?php include("cabecarioAdm.php");?>
         <div class="container panel panel-default">
 			</br></br>
                         <form action = "fachadaCadastrarAluno.php" method = "POST">
