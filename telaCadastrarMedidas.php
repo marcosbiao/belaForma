@@ -9,11 +9,12 @@
         $query = "Select * from aluno";
         $rs = Select($query);
         ?>
-        <?php 
-            //retornar a data atual
-            $dia = date('d');
-            $mes = date('m');
-            $ano = date('y');
+        <?php
+        //retornar a data atual
+        $dia = date('d');
+        $mes = date('m');
+        $ano = date('Y');
+        $data = date('d/m/Y');
         ?>
         <div class="container panel panel-default">
             </br></br>
@@ -38,35 +39,37 @@
                             }
                             ?>
                         </select>
-                        
+
                         <span class="input-group-addon" id="sizing-addon2">Data</span>
-                        <?php echo $dia.'/'.$mes.'/'.$ano;  ?>
+                        <?php echo $dia . '/' . $mes . '/' . $ano; ?>
+                        <?php echo $data; ?>
                     </div>
-                    
+
                     <input type="hidden" name="dia" value="<?php echo $dia ?>">
                     <input type="hidden" name="mes" value="<?php echo $mes ?>">
                     <input type="hidden" name="ano" value="<?php echo $ano ?>">
+                    <input type="hidden" name="data" value="<?php echo $data ?>">
                     <br>
-                    
+
                     <div class="input-group">
                         <span class="input-group-addon" id="sizing-addon2">Peso</span>
                         <input type="number" required class="form-control"  id="peso" name="peso" placeholder="Digite o nome do aluno" aria-describedby="sizing-addon2" min="0" step="0.1">
-                    
+
                         <span class="input-group-addon" id="sizing-addon2">Altura</span>
                         <input type="number" required class="form-control"  id="altura" name="altura" placeholder="Digite o nome do aluno" aria-describedby="sizing-addon2" min="0" step="0.01">
                     </div>
-                    
+
                     <br>
-                    
+
                     <div class="input-group">
                         <span class="input-group-addon" id="sizing-addon2">Circunferencia Abdominal</span>
                         <input type="number" required class="form-control"  id="circAbd" name="circAbd" placeholder="Digite o nome do aluno" aria-describedby="sizing-addon2" min="0" step="0.1">
-                    
+
                         <span class="input-group-addon" id="sizing-addon2">Circunferencia Quadril</span>
                         <input type="number" required class="form-control"  id="circQuad" name="circQuad" placeholder="Digite o nome do aluno" aria-describedby="sizing-addon2" min="0" step="0.1">
                     </div>
-                    
-                    
+
+
                     <div>
                         <input type="submit" id = "bm" class="btn btn-default topElementos" value="Salvar" />
                     </div>
@@ -75,6 +78,6 @@
         </div>
 
         <?php include("script.html"); ?>
-<?php include("foot.html"); ?>    
+        <?php include("foot.html"); ?>    
     </body>
 </html>

@@ -24,18 +24,22 @@ $circQuad = trim($_POST["circQuad"]);
 $dia = trim($_POST["dia"]);
 $mes = trim($_POST["mes"]);
 $ano = trim($_POST["ano"]);
+$dataA = trim($_POST["data"]);
+    $dataP = explode('/', $dataA);
+    $data = $dataP[2].'-'.$dataP[1].'-'.$dataP[0];
+
 //if ($login == "Marcos") {
 //    $_SESSION['Mensagem'] = "Erro defina um novo login";
 //    header("Location: telaCadastrarAluno.php");
 //}
 // chamando a função query da classe banco para adicionar ao banco de dados
-$b = "INSERT INTO medidas (id_aluno,peso,altura,imc,circAbd,circQuad,dia,mes,ano) "
-        . "VALUES ($id_aluno,$peso,$altura,$imc,$circAbd,$circQuad,$dia,$mes,$ano)";
+$b = "INSERT INTO medidas (id_aluno,peso,altura,imc,circAbd,circQuad,dia,mes,ano,data) "
+        . "VALUES ($id_aluno,$peso,$altura,$imc,$circAbd,$circQuad,$dia,$mes,$ano,'$data')";
 //echo $b;
 noQuery($b);
 ?>
 <script>
 
     window.location = "telaCadastrarMedidas.php"
-
+    
 </script>
