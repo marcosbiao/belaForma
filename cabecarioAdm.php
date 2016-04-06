@@ -32,10 +32,10 @@
         
         <li role="presentation" class="dropdown">
              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-               Matricula<span class="caret"></span>
+               Medidas<span class="caret"></span>
              </a>
              <ul class="dropdown-menu">
-                 <li role="presentation"><a href="telaMatricularAluno.php">Matricular aluno</a></li>
+                 <li role="presentation"><a href="telaCadastrarMedidas.php">Cadastrar Medidas</a></li>
                 <li role="presentation"><a href="">Consultar modalidade</a></li>
                 <li role="presentation"><a href="">Alterar modalidade</a></li>
                 <li role="presentation"><a href="">Desativar modalidade</a></li>
