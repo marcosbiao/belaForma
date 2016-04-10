@@ -17,6 +17,8 @@
                 <li role="presentation"><a href="telaConsultarSolicitacaoBolsaEstagio.php">Reativar aluno</a></li>
             </ul>
         </li> 
+        
+        
             <li role="presentation" class="dropdown">
              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                Modalidade<span class="caret"></span>
@@ -42,5 +44,22 @@
                 <li role="presentation"><a href="">Reativar modalidade</a></li>
             </ul>
         </li>
+        
+        
+        <li role="presentation" class="dropdown">
+             <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+               Aulas<span class="caret"></span>
+             </a>
+             <ul class="dropdown-menu">
+                 <li role="presentation"><a href="telaCadastrarAulas.php">Cadastrar Aulas</a></li>
+<!--                <li role="presentation"><a href="telaConsultarMedidas.php">Consultar Medidas</a></li>
+                <li role="presentation"><a href="">Alterar modalidade</a></li>
+                <li role="presentation"><a href="">Desativar modalidade</a></li>
+                <li role="presentation"><a href="">Reativar modalidade</a></li>-->
+            </ul>
+        </li>
+        
+        
+        
             <li role="presentation"><a href="logout.php">Sair</a></li>
       </ul>
