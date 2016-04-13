@@ -65,42 +65,25 @@
                     <input type="hidden" name="data" value="<?php echo $data ?>">
                     <br>
 
-                    <div class="input-group">
-                        <span class="input-group-addon" id="sizing-addon2">Nome exercicio</span>
-                        <input type="text" required class="form-control"  size="10" id="exercicio" name="exercicio0" placeholder="Digite o nome do exercicio" aria-describedby="sizing-addon2">
-
-                        <span class="input-group-addon" id="sizing-addon2">Repetição</span>
-                        <input type="text" required class="form-control" size="4" id="repeticao" name="repeticao0" placeholder="Digite a quantidade de repetições" aria-describedby="sizing-addon2">
                     
-                        <span class="input-group-addon" id="sizing-addon2">Carga</span>
-                        <input type="number" required class="form-control" size="4" id="carga" name="carga0" placeholder="Digite a quantidade de carga" aria-describedby="sizing-addon2" min="0">
-                    </div>
-
-                    <br>
-
-                    <div class="input-group">
-                        <span class="input-group-addon" id="sizing-addon2">Nome exercicio</span>
-                        <input type="text" required class="form-control"  size="10" id="exercicio" name="exercicio1" placeholder="Digite o nome do exercicio" aria-describedby="sizing-addon2">
-
-                        <span class="input-group-addon" id="sizing-addon2">Repetição</span>
-                        <input type="text" required class="form-control" size="4" id="repeticao" name="repeticao1" placeholder="Digite a quantidade de repetições" aria-describedby="sizing-addon2">
+                    <?php 
+                        for($i=1;$i<=10;$i++){
+                            echo "<div class='input-group'>";
+                            
+                            echo "<span class='input-group-addon' id='sizing-addon2'>Nome exercicio</span>";
+                            echo "<input type='text' class='form-control'  size='45' id='exercicio' name='exercicio".$i."' placeholder='Digite o nome do exercicio' aria-describedby='sizing-addon2'>";
+                        
+                            echo "<span class='input-group-addon' id='sizing-addon2'>Repetição</span>";
+                            echo "<input type='text' class='form-control' size='8' id='repeticao' name='repeticao".$i."' placeholder='Digite a quantidade de repetições' aria-describedby='sizing-addon2'>";
+                            
+                            echo "<span class='input-group-addon' id='sizing-addon2'>Carga</span>";
+                            echo "<input type='number' class='form-control' size='8' id='carga' name='carga".$i."' placeholder='Digite a quantidade de carga' aria-describedby='sizing-addon2' min='0'>";
+                            echo "</div>";
+                        }
                     
-                        <span class="input-group-addon" id="sizing-addon2">Carga</span>
-                        <input type="number" required class="form-control" size="4" id="carga" name="carga1" placeholder="Digite a quantidade de carga" aria-describedby="sizing-addon2" min="0">
-                    </div>
                     
-                    <br>
-
-                    <div class="input-group">
-                        <span class="input-group-addon" id="sizing-addon2">Nome exercicio</span>
-                        <input type="text" required class="form-control"  size="10" id="exercicio" name="exercicio2" placeholder="Digite o nome do exercicio" aria-describedby="sizing-addon2">
-
-                        <span class="input-group-addon" id="sizing-addon2">Repetição</span>
-                        <input type="text" required class="form-control" size="4" id="repeticao" name="repeticao2" placeholder="Digite a quantidade de repetições" aria-describedby="sizing-addon2">
                     
-                        <span class="input-group-addon" id="sizing-addon2">Carga</span>
-                        <input type="number" required class="form-control" size="4" id="carga" name="carga2" placeholder="Digite a quantidade de carga" aria-describedby="sizing-addon2" min="0">
-                    </div>
+                    ?>
                     
                     <br>
                     

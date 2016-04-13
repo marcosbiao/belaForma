@@ -42,6 +42,6 @@ noQuery($b);
 ?>
 <script>
 
-    //window.location = "telaCadastrarAulas.php"
+    window.location = "telaCadastrarAulas.php"
     
 </script>
