@@ -52,8 +52,8 @@
              </a>
              <ul class="dropdown-menu">
                  <li role="presentation"><a href="telaCadastrarAulas.php">Cadastrar Aulas</a></li>
-<!--                <li role="presentation"><a href="telaConsultarMedidas.php">Consultar Medidas</a></li>
-                <li role="presentation"><a href="">Alterar modalidade</a></li>
+                <li role="presentation"><a href="telaConsultarAulas.php">Consultar Aulas</a></li>
+<!--                <li role="presentation"><a href="">Alterar modalidade</a></li>
                 <li role="presentation"><a href="">Desativar modalidade</a></li>
                 <li role="presentation"><a href="">Reativar modalidade</a></li>-->
             </ul>
