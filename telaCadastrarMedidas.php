@@ -56,7 +56,7 @@
                         <input type="number" required class="form-control"  id="peso" name="peso" placeholder="Digite o nome do aluno" aria-describedby="sizing-addon2" min="0" step="0.1">
 
                         <span class="input-group-addon" id="sizing-addon2">Altura</span>
-                        <input type="number" required class="form-control"  id="altura" name="altura" placeholder="Digite o nome do aluno" aria-describedby="sizing-addon2" min="0" step="0.01">
+                        <input type="number" class="form-control"  id="altura" name="altura" placeholder="Digite o nome do aluno" aria-describedby="sizing-addon2" min="0" step="0.01">
                     </div>
 
                     <br>

@@ -1,5 +1,5 @@
 <br>
-        <center> <img src="imagem/logoBelaForma.jpg" width="700" height="300"> </center>
+        <center> <img src="imagem/logoBelaForma.jpg" width="25%"> </center>
         <br>
         <ul class="nav nav-tabs">
             <!--Dropdown para bolsa estagio-->

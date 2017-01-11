@@ -5,7 +5,7 @@
 
     <body>
         <br>
-        <center> <img src="imagem/logoBelaForma.jpg" width="700" height="300"> </center>
+    <center> <img src="imagem/logoBelaForma.jpg" width="25%"> </center>
         <br>
         <div class="container panel panel-default">
             <form action="validadorLogin.php" method="POST">

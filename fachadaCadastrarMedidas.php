@@ -14,34 +14,35 @@ if (!isset($_SESSION['UsuarioID'])) {
 
 include ("banco/banco.php");
 // pegando o nome e tirando os espaços no inicio e no fim com a funcao "trim"
-$nExercicio = trim($_POST["nExercicios"]);
 $id_aluno = trim($_POST["id_aluno"]);
 $dataA = trim($_POST["data"]);
     $dataP = explode('/', $dataA);
-    $data = $dataP[2].'-'.$dataP[1].'-'.$dataP[0];
+    $data = $dataP[2]."-".$dataP[1]."-".$dataP[0];
+    echo $data;
 
-for($i=0;$i<$nExercicio;$i++){
-    $exer = "exercicio".$i;
-    $exercicio = trim($_POST[$exer]);
-    $rep = "repeticao".$i;
-    $repeticao = trim($_POST[$rep]);
-    $car = "carga".$i;
-    $carga = trim($_POST[$car]);
-
-//if ($login == "Marcos") {
-//    $_SESSION['Mensagem'] = "Erro defina um novo login";
-//    header("Location: telaCadastrarAluno.php");
-//}
+$peso = trim($_POST["peso"]);
+if(empty(trim($_POST["altura"]))){
+    $query = "Select altura from medidas where id_aluno = $id_aluno order by data desc limit 0,1";
+    $rs = Select($query);
+    $row = mysql_fetch_array($rs);
+    $altura = $row['altura'];
+}else{
+    $altura = trim($_POST["altura"]);
+}
+$imc = $peso/($altura*$altura);
+$circAbd = trim($_POST["circAbd"]);
+$circQuad = trim($_POST["circQuad"]);
+    
 // chamando a função query da classe banco para adicionar ao banco de dados
-$b = "INSERT INTO exercicio (id_aluno,exercicio,repeticao,carga,data) "
-        . "VALUES ($id_aluno,'$exercicio','$repeticao',$carga,'$data')";
-//echo $b;
+$b = "INSERT INTO medidas (id_aluno,peso,altura,imc,circAbd,circQuad,data) "
+        . "VALUES ($id_aluno,$peso,$altura,$imc,$circAbd,$circQuad,'$data')";
+echo $b;
 noQuery($b);
 
-}
+
 ?>
 <script>
 
-    window.location = "telaCadastrarAulas.php"
+    window.location = "telaPrincipalAdm.php"
     
 </script>

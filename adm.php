@@ -5,7 +5,7 @@
 
     <body>
         <br>
-    <center> <img src="imagem/logoBelaForma.jpg" width="700" height="300"> </center>
+    <center> <img src="imagem/logoBelaForma.jpg" width="25%"> </center>
     <br>
         <center> <h2>Login para administradores</h2> </center>
         <div class="container panel panel-default">
